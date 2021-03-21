@@ -1,9 +1,9 @@
-# `Nombre del tema`
+# Estructuras de decisión
 
-## Ejercicio: `<Título del ejercicio>`
+## Ejercicio: Siguiente segundo
 
 ## Objetivos
-- Formular una solución efectiva a un problema que incorpora `<recursion>, <user-defined functions>, <iteration>, <conditionals>`.
+- Formular una solución efectiva a un problema que incorpora estructuras de decisión anidadas.
 - Interpretar adecuadamente los requisitos de solución de un problema a partir de su descripcion en lenguaje natural.
 - Generar, a partir del análisis del problema:
     - La identificación correcta de las entradas y salidas requeridas, y
@@ -12,23 +12,42 @@
 - Codificar el algoritmo en un programa correcto de Python.
 - Identificar y ejecutar los casos de prueba pertinentes y suficientes para verificar la funcionalidad de la solución propuesta.
 
-- `Recognize, Identify, Select, Analyze, Differentiate, Distinguish, Diagram, Examine, Outline, Subdivide, Understand, Demonstrate, Illustrate, Represent, Interpret, Evaluate, Apply, Assess, Chart, Construct, Develop, Implement, Prepare, Provide, Compute, Contribute, Determine, Establish, Include, Produce, Show, Combine, Design, Make, Plan, Compose, Create, Devise, Formulate, `
-
 ## Instrucciones
 - Elabora el análisis y el algoritmo ***antes de escribir el código***. Utiliza un diagrama de flujo para representar tu algoritmo e ilustrar su lógica.
     - [diagrams.net](https://app.diagrams.net/) es una herramienta gratuita y fácil de usar con la que puedes crear diagramas de flujo. 
     - Puedes ver un ejemplo de como subir diagramas de flujo a GitHub [aquí](https://youtu.be/oy5nhA7QpNI).
 
-- **Diseña un programa para `<...>`**.
+- **Diseña un programa para calcular la hora correspondiente al siguiente segundo**.
+  - El programa recibirá tres números enteros que representarán, respectivamente, las horas, minutos y segundos correpondientes a un momento dado. 
+  - El programa calculará, a continuación, la hora correspondiente al siguiente segundo, es decir, qué hora sería una vez que ha transcurrido un segundo después de la hora proporcionada como entrada.
+  - Considerar que la hora se representará en formato "militar" (24 horas).
+  - Considerar también que se recibirán como entrada valores correspondientes a una hora válida, es decir, no es necesario validar las entradas.
 
-- Codifica tu solución en el archivo [`main.py`](/main.py).
+- Codifica tu solución en el archivo [`segundo_siguiente.py`](/segundo_siguiente.py).
    
-- Utiliza los siguientes ejemplos para dar formato a tus entradas y salidas `<user prompt> <output> <file>`:
+- Utiliza los siguientes ejemplos para dar formato a tus entradas y salidas:
   ```
-  <format example>
+  Hora inicial:
+      Hora: 1
+      Minuto: 2
+      Segundo: 3
+  Hora final:
+      Hora: 1
+      Minuto: 2
+      Segundo: 4
+  
+  Hora inicial:
+      Hora: 7
+      Minuto: 59
+      Segundo: 59
+
+  Hora final:
+      Hora: 8
+      Minuto: 0
+      Segundo: 0
   ```
   
-- Prueba tu programa corriéndolo varias veces con diferentes entradas. Verifica que tu algoritmo produzca las salidas correctas. Pon atención especial a los casos que pudieran ser problemáticos de manejar (casos límite).
+- Prueba tu programa corriéndolo varias veces con diferentes entradas. Verifica que tu algoritmo produzca las salidas correctas. Identifica y pon atención especial a los casos que pudieran ser problemáticos de manejar (casos límite).
 
 - Añade la siguiente cadena de documentación (*docstring*) al inicio de tu programa:
   ```
@@ -45,9 +64,7 @@
   ```
   
 ## Entrega
-1. Completa este y el resto de los ejercicios y compila, para cada ejercicio, el enunciado, análisis, diagrama de flujo y código, en un informe tal como se describe en los [requisitos para entrega de tareas](https://canvas.iteso.mx/courses/12856/modules/items/418369) en Canvas. También los puedes consultar [aquí](/report/report_example.pdf). No olvides incluir portada y conclusiones.
-
-`1. Complete and submit your program as outlined in this [instructional video](https://youtu.be/SrJ_c8S1_D8).`
+1. Completa este ejercicio y compila el enunciado, análisis, diagrama de flujo y código, en un informe tal como se describe en los [requisitos para entrega de tareas](https://canvas.iteso.mx/courses/12856/modules/items/418369) en Canvas. También los puedes consultar [aquí](/report/report_example.pdf). No olvides incluir portada y conclusiones.
 
 2. Agrega el diagrama de flujo a la carpeta [`flowchart`](/flowchart) (puedes ver un [ejemplo de cómo se hace](https://youtu.be/oy5nhA7QpNI)).
 
@@ -56,9 +73,10 @@
 ## Casos de prueba de ejemplo
 | Entradas | Salidas |
 |:---------|:--------|
-| `entrada11`<br>`entrada12` | `salida11`<br>`salida12`<br>`salida13` |
-| `entrada21` | `salida21`<br>`salida22` |
-| `entrada31`<br>`entrada32`<br>`entrada33`  | `salida21`<br>`salida22` |
+| `7`<br>`8`<br>`9` | `7`<br>`8`<br>`10` |
+| `7`<br>`8`<br>`10` | `7`<br>`8`<br>`11` |
+| `15`<br>`25`<br>`59` | `15`<br>`26`<br>`0` |
+| `23`<br>`59`<br>`59` | `0`<br>`0`<br>`0` |
 
 ## Rúbrica
 Verifica tu entrega contra esta rúbrica para maximizar tu calificación. Los puntos se indican en porcentaje.

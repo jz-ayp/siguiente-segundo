@@ -53,10 +53,10 @@
   ```
   '''
   Tarea: <Nombre de la tarea y del ejercicio>
-  Author: <Tu nombre>
-  Fecha de entrega: DD/MM/YYYY
-  Grupo: ESI-XXXX-XX
-  Profesor: XXX
+  Autor: <Tu nombre>
+  Fecha de entrega: DD/MMM/YYYY
+  Grupo: <Tu grupo ESI-XXXX-XX>
+  Profesor: <Nombre del profesor>
 
   Descripción:
   <Una breve descripción del programa>

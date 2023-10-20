@@ -1,23 +1,15 @@
 """
-Calcular la hora correspondiente al siguiente segundo
+Inserta el encabezado aquí y escribe tu código abajo
 """
 
+# Declaraciones
+CONSTANTE = valor
+
 # Entradas
-horas = int(input("Hora: "))
-minutos = int(input("Minutos: "))
-segundos = int(input("Segundos: "))
+entrada = input()
 
 # Proceso
-segundos += 1
-if segundos > 59:
-    segundos = 0
-    minutos += 1
-    if minutos > 59:
-        minutos = 0
-        horas += 1
-        if horas > 23:
-            horas = 0
-tiempo = f'{horas:02d}:{minutos:02d}:{segundos:02d}'
+salida = entrada
 
 # Salidas
-print('Hora al siguiente segundo >', tiempo)
+print(salida)

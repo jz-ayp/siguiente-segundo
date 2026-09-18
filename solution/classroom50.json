@@ -1,0 +1,251 @@
+{
+  "assignments": [
+    {
+      "tests": [
+        {
+          "name": "00:00:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n0\r\n0",
+          "expected": "0(\n|.)*0(\n|.)*1"
+        },
+        {
+          "name": "00:00:21",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n0\r\n21",
+          "expected": "0(\n|.)*0(\n|.)*22"
+        },
+        {
+          "name": "00:00:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n0\r\n59",
+          "expected": "0(\n|.)*1(\n|.)*0"
+        },
+        {
+          "name": "00:12:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n12\r\n0",
+          "expected": "0(\n|.)*12(\n|.)*1"
+        },
+        {
+          "name": "00:12:52",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n12\r\n52",
+          "expected": "0(\n|.)*12(\n|.)*53"
+        },
+        {
+          "name": "00:12:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n12\r\n59",
+          "expected": "0(\n|.)*13(\n|.)*0"
+        },
+        {
+          "name": "00:59:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n59\r\n0",
+          "expected": "0(\n|.)*59(\n|.)*1"
+        },
+        {
+          "name": "00:59:09",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n59\r\n9",
+          "expected": "0(\n|.)*59(\n|.)*10"
+        },
+        {
+          "name": "00:59:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "0\r\n59\r\n59",
+          "expected": "1(\n|.)*0(\n|.)*0"
+        },
+        {
+          "name": "16:00:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n0\r\n0",
+          "expected": "16(\n|.)*0(\n|.)*1"
+        },
+        {
+          "name": "16:00:45",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n0\r\n45",
+          "expected": "16(\n|.)*0(\n|.)*46"
+        },
+        {
+          "name": "16:00:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n0\r\n59",
+          "expected": "16(\n|.)*1(\n|.)*0"
+        },
+        {
+          "name": "16:48:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n48\r\n0",
+          "expected": "16(\n|.)*48(\n|.)*1"
+        },
+        {
+          "name": "16:48:56",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n48\r\n56",
+          "expected": "16(\n|.)*48(\n|.)*57"
+        },
+        {
+          "name": "16:48:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n48\r\n59",
+          "expected": "16(\n|.)*49(\n|.)*0"
+        },
+        {
+          "name": "16:59:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n59\r\n0",
+          "expected": "16(\n|.)*59(\n|.)*1"
+        },
+        {
+          "name": "16:59:20",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n59\r\n20",
+          "expected": "16(\n|.)*59(\n|.)*21"
+        },
+        {
+          "name": "16:59:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "16\r\n59\r\n59",
+          "expected": "17(\n|.)*0(\n|.)*0"
+        },
+        {
+          "name": "23:00:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n0\r\n0",
+          "expected": "23(\n|.)*0(\n|.)*1"
+        },
+        {
+          "name": "23:00:31",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n0\r\n31",
+          "expected": "23(\n|.)*0(\n|.)*32"
+        },
+        {
+          "name": "23:00:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n0\r\n59",
+          "expected": "23(\n|.)*1(\n|.)*0"
+        },
+        {
+          "name": "23:37:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n37\r\n0",
+          "expected": "23(\n|.)*37(\n|.)*1"
+        },
+        {
+          "name": "23:37:21",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n37\r\n21",
+          "expected": "23(\n|.)*37(\n|.)*22"
+        },
+        {
+          "name": "23:37:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n37\r\n59",
+          "expected": "23(\n|.)*38(\n|.)*0"
+        },
+        {
+          "name": "23:59:00",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n59\r\n0",
+          "expected": "23(\n|.)*59(\n|.)*1"
+        },
+        {
+          "name": "23:59:32",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n59\r\n32",
+          "expected": "23(\n|.)*59(\n|.)*33"
+        },
+        {
+          "name": "23:59:59",
+          "type": "io",
+          "run": "python3 segundo_siguiente.py",
+          "points": 10,
+          "comparison": "regex",
+          "input": "23\r\n59\r\n59",
+          "expected": "0(\n|.)*0(\n|.)*0"
+        }
+      ]
+    }
+  ]
+}
